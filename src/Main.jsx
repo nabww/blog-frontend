@@ -42,7 +42,7 @@ function Main() {
       <div className="navbar">
         <h2 onClick={() => scrollDown(blogSection)}>Home</h2>
         <h2 onClick={() => scrollDown(newsSection)}>News</h2>
-        <h2 onClick={() => scrollDown(aboutSection)}>About</h2>
+        <h2 onClick={() => scrollDown(aboutSection)}>About the Author</h2>
         <h2 onClick={() => scrollDown(contactSection)}>Contacts</h2>
         <h2>Login</h2>
         <h2>Register</h2>
