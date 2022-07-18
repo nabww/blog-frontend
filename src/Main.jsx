@@ -10,7 +10,6 @@ import { privateAxios } from "./api/axios";
 function Main() {
   // const ref = useRef(null);
   const blogSection = useRef(null);
-  const newsSection = useRef(null);
   const contactSection = useRef(null);
   const aboutSection = useRef(null);
 
