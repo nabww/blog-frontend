@@ -5,7 +5,8 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    box-shadow: -1px 7px 41px 0px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    /* box-shadow: -1px 7px 41px 0px rgba(0, 0, 0, 0.75); */
 }
 .navbar{
     font-size: 1em;
@@ -13,7 +14,7 @@
     /* padding: 1em;	 */
     display: flex;
     overflow: hidden;
-    height: 3em;
+    height: auto;
     width: 100%;
     margin-top: 0%;
 }
@@ -87,14 +88,13 @@
     /* margin-left: 20%; */
 }
 .content p{
-    font-size: 1.5em;
-    line-height: 1.7em;
+    font-size: 1em;
+    line-height: 1em;
     letter-spacing: .05em;
 }
 .img {
-    align-self: center;
     width: 90%;
-    height: auto;
+    /* height: auto; */
 }
 .otherblogs{
     color: mistyrose;
@@ -148,7 +148,7 @@
     /* clear: right; */
 }
 .img{
-    margin: 5em;
+    margin: auto;
 }
 .contact a{
     /* display: inline-block; */
