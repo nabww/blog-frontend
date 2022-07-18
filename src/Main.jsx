@@ -12,6 +12,7 @@ function Main() {
   const blogSection = useRef(null);
   const contactSection = useRef(null);
   const aboutSection = useRef(null);
+  const mailSection = useRef(null);
 
   const [email, setEmail] = useState("");
 
@@ -38,12 +39,12 @@ function Main() {
 
   return (
     <div className="main">
-      <div className="navbar">
-        <h2 onClick={() => scrollDown(blogSection)}>Home</h2>
-        <h2 onClick={() => scrollDown(aboutSection)}>About the Author</h2>
-        <h2 onClick={() => scrollDown(contactSection)}>Contacts</h2>
-        <h2>Register</h2>
-      </div>
+      <ul className="navbar">
+        <li onClick={() => scrollDown(blogSection)}>Home</li>
+        <li onClick={() => scrollDown(aboutSection)}>About the Author</li>
+        <li onClick={() => scrollDown(contactSection)}>Contacts</li>
+        <li style = {{float:"right"}} onClick={() => scrollDown(mailSection)}>Register</li>
+      </ul>
       <div className="body">
         <ScrollToTop />
 
@@ -204,7 +205,7 @@ function Main() {
             </p>
           </div>
         </div>
-          <div className="mailing">
+          <div className="mailing" ref={mailSection}>
           <h1>Join the Mailing List!</h1>
           <form>
             <input
@@ -218,9 +219,18 @@ function Main() {
             </button>
           </form>
         </div>
-        <div className="footer2">
+        <div className="">
           <div ref={contactSection} className="contact">
             <h1>Contact Us</h1>
+            <p>
+              Phone: 0712345678
+              <br />
+              <br></br>
+              Email: myname@thetalk.co.ke
+              <br/>
+              <br/>
+              Address: 123 Main Street, Nairobi
+            </p>
             <a href="https:/instagram.com">Instagram</a>
             <a href="facebook.com">Facebook</a>
             <a href="twitter.com">Twitter</a>
@@ -229,7 +239,7 @@ function Main() {
         </div>     
             <footer className="footer" align="center">
             <img src="" alt="" />
-            All Rights Reserved.
+            ©TheTalk 2022. All Rights Reserved.
           </footer>
         </div>
       </div>
